@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+
+  <System name ="Center">
+    <Item>
+      <Key>GGNCenterUser_xxxx</Key>
+      <Remark>xxxx是用户名,不同的用户key取得不同的用户信息集合</Remark>
+      <!--数据格式和对象-->
+      <![CDATA[ UserBackFullInfo]]>
+    </Item>
+
+    <Item>
+      <Key>GGNCenterOrgs</Key>
+      <Remark>所有组织机构</Remark>
+      <!--数据格式和对象-->
+      <![CDATA[ List<vOrg_Organization> ]]>
+    </Item>
+
+    <Item>
+      <Key>GGNCenterOrgAllPersons</Key>
+      <Remark>所有机构下的员工信息(员工属于多个机构,所以1个员工有多条信息)</Remark>
+      <!--数据格式和对象-->
+      <![CDATA[ List<View_UserOrgInfo>]]>
+    </Item>
+  </System>
+
+  <System name ="xxx系统">
+    <Item>
+      <Key>GGNXXXBaseData</Key>
+      <Remark>基础数据,常用mark</Remark>
+      <!--数据格式和对象-->
+      <![CDATA[ List<Sys_BaseData>]]>
+    </Item>
+  </System>
+
+</root>

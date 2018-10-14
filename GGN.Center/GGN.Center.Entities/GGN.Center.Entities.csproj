@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC476FEE-F164-4734-8465-DC1AEBF20B2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GGN.Center.Entities</RootNamespace>
+    <AssemblyName>GGN.Center.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GGNCenterExtions\Auth_DataObjectExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_DataRoleConfigExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_DataRoleDirectoryExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_DataRoleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_FeatureRoleConfigExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_FeatureRoleDirectoryExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_FeatureRoleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_PositionDataRoleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_PositionFeatureRoleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_PositionSpecialMenuConfigExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_UserDataRoleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Auth_UserFeatureRoleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_GroupExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_OrganizationCategoryExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_OrganizationExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_PositionCategoryExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_PositionDefineExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_PositionExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_UserExtions.cs" />
+    <Compile Include="GGNCenterExtions\Org_UserPositionExtions.cs" />
+    <Compile Include="GGNCenterExtions\Schedule_LogExtions.cs" />
+    <Compile Include="GGNCenterExtions\Schedule_TaskExtions.cs" />
+    <Compile Include="GGNCenterExtions\Schedule_TypeExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_ApplicationExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_ApplicationModuleExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_FeatureExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_MenuExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_OpenInterfaceExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_OpenInterfaceTypeExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_RegionExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_StaticDataExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_UserLoginHistoryExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_UserLoginStateExtions.cs" />
+    <Compile Include="GGNCenterExtions\Sys_UserShortCutMenuExtions.cs" />
+    <Compile Include="GGNCenterExtions\UserBackFullInfo.cs" />
+    <Compile Include="GGNCenterExtions\View_DataRolePositionExtions.cs" />
+    <Compile Include="GGNCenterExtions\View_FeaturePositionExtions.cs" />
+    <Compile Include="GGNCenterExtions\View_MenuSyExtions.cs" />
+    <Compile Include="GGNCenterExtions\View_UserOrgInfoExtions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TTPrototype\Auth_DataObject.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_DataRole.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_DataRoleConfig.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_DataRoleDirectory.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_FeatureRole.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_FeatureRoleConfig.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_FeatureRoleDirectory.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_PositionDataRole.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_PositionFeatureRole.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_PositionSpecialMenuConfig.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_UserDataRole.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Auth_UserFeatureRole.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\GGNCenter.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_Group.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_Organization.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_OrganizationCategory.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_Position.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_PositionCategory.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_PositionDefine.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_User.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Org_UserPosition.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Schedule_Log.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Schedule_Task.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Schedule_Type.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_Application.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_ApplicationModule.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_Feature.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_Menu.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_OpenInterface.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_OpenInterfaceType.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_Region.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_StaticData.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_UserLoginHistory.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_UserLoginState.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\Sys_UserShortCutMenu.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\View_Company.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\View_DataRolePosition.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\View_FeaturePosition.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\View_MenuSys.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TTPrototype\View_UserOrgInfo.cs">
+      <DependentUpon>GGNCenter.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TTPrototype\GGNCenter.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GGNCenter.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\FW.Base\FW.Base.csproj">
+      <Project>{9cc61c2c-25cc-44f7-8761-02cce244b945}</Project>
+      <Name>FW.Base</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

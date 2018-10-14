@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{362694F0-46CE-49B5-9D33-0AD80B708A8E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GGN.Center.Dal</RootNamespace>
+    <AssemblyName>GGN.Center.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GGNCenter.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GGNCenter.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GGNCenter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GGNCenter.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GGNCenterDal\Auth_DataObjectDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_DataRoleConfigDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_DataRoleDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_DataRoleDirectoryDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_FeatureRoleConfigDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_FeatureRoleDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_FeatureRoleDirectoryDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_PositionDataRoleDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_PositionFeatureRoleDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_PositionSpecialMenuConfigDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_UserDataRoleDal.cs" />
+    <Compile Include="GGNCenterDal\Auth_UserFeatureRoleDal.cs" />
+    <Compile Include="GGNCenterDal\Org_GroupDal.cs" />
+    <Compile Include="GGNCenterDal\Org_OrganizationCategoryDal.cs" />
+    <Compile Include="GGNCenterDal\Org_OrganizationDal.cs" />
+    <Compile Include="GGNCenterDal\Org_PositionCategoryDal.cs" />
+    <Compile Include="GGNCenterDal\Org_PositionDal.cs" />
+    <Compile Include="GGNCenterDal\Org_PositionDefineDal.cs" />
+    <Compile Include="GGNCenterDal\Org_UserDal.cs" />
+    <Compile Include="GGNCenterDal\Org_UserPositionDal.cs" />
+    <Compile Include="GGNCenterDal\Schedule_LogDal.cs" />
+    <Compile Include="GGNCenterDal\Schedule_TaskDal.cs" />
+    <Compile Include="GGNCenterDal\Schedule_TypeDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_ApplicationDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_ApplicationModuleDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_FeatureDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_MenuDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_OpenInterfaceDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_OpenInterfaceTypeDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_RegionDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_StaticDataDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_UserLoginHistoryDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_UserLoginStateDal.cs" />
+    <Compile Include="GGNCenterDal\Sys_UserShortCutMenuDal.cs" />
+    <Compile Include="GGNCenterDal\View_DataRolePositionDal.cs" />
+    <Compile Include="GGNCenterDal\View_FeaturePositionDal.cs" />
+    <Compile Include="GGNCenterDal\View_MenuSyDal.cs" />
+    <Compile Include="GGNCenterDal\View_UserOrgInfoDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="GGNCenter.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GGNCenter.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GGNCenter.edmx.diagram">
+      <DependentUpon>GGNCenter.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GGNCenter.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>GGNCenter.Context.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FW.Base\FW.Base.csproj">
+      <Project>{9cc61c2c-25cc-44f7-8761-02cce244b945}</Project>
+      <Name>FW.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FW.Tool\FW.Tool.csproj">
+      <Project>{86d43c67-547e-4746-836f-653843eb3d9e}</Project>
+      <Name>FW.Tool</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GGN.Center.Entities\GGN.Center.Entities.csproj">
+      <Project>{ac476fee-f164-4734-8465-dc1aebf20b2f}</Project>
+      <Name>GGN.Center.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

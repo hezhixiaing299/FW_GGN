@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="aba64f0c55ab49689b794ed7ac52776c" Name="Diagram1" ZoomLevel="60">
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_DataObject" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_DataRole" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_DataRoleConfig" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_DataRoleDirectory" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_FeatureRole" Width="1.5" PointX="2.75" PointY="4.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_FeatureRoleConfig" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_FeatureRoleDirectory" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_PositionDataRole" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_PositionFeatureRole" Width="1.5" PointX="4.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_PositionSpecialMenuConfig" Width="1.5" PointX="6.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_UserDataRole" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Auth_UserFeatureRole" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_Group" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_Organization" Width="1.5" PointX="8.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_OrganizationCategory" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_Position" Width="1.5" PointX="2.75" PointY="10.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_PositionCategory" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_PositionDefine" Width="1.5" PointX="4.75" PointY="10.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_User" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Org_UserPosition" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Schedule_Log" Width="1.5" PointX="12.75" PointY="3.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Schedule_Task" Width="1.5" PointX="6.75" PointY="12.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Schedule_Type" Width="1.5" PointX="12.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_Application" Width="1.5" PointX="8.75" PointY="12.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_ApplicationModule" Width="1.5" PointX="12.75" PointY="10.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_Feature" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_Menu" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_OpenInterface" Width="1.5" PointX="2.75" PointY="14.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_OpenInterfaceType" Width="1.5" PointX="14.75" PointY="4.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_Region" Width="1.5" PointX="14.75" PointY="7.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_StaticData" Width="1.5" PointX="10.75" PointY="14.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_UserLoginHistory" Width="1.5" PointX="14.75" PointY="11.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_UserLoginState" Width="1.5" PointX="12.75" PointY="15.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.Sys_UserShortCutMenu" Width="1.5" PointX="14.75" PointY="15.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.View_Company" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.View_DataRolePosition" Width="1.5" PointX="16.75" PointY="5.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.View_FeaturePosition" Width="1.5" PointX="16.75" PointY="12.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.View_MenuSys" Width="1.5" PointX="8.75" PointY="17.75" />
+        <EntityTypeShape EntityType="GGNCenterModel.View_UserOrgInfo" Width="1.5" PointX="18.75" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
