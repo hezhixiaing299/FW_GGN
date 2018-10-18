@@ -374,7 +374,7 @@ namespace GGN.Center.UI
                         authorityAttribute.SameActionName = actionName;
                     }
                     actionName = authorityAttribute.SameActionName;
-                    if (!string.IsNullOrEmpty(authorityAttribute.SameControllerName))
+                    if (string.IsNullOrEmpty(authorityAttribute.SameControllerName)) //如果没有复制SameActionName,则用当前ActionName
                     {
                         controllerName = authorityAttribute.SameControllerName;
                     }
